@@ -17,32 +17,45 @@
      placeholder tile.
 
    Current set: 24 frames from "The Artisan Edit: 4th Batch
-   Reunion" (Lightroom album), exported at 2048px.
+   Reunion" mixed with 12 from "Sophia's Graduation" (Lightroom
+   albums), exported at 2048px.
 ============================================================ */
 
 window.PHOTOS = [
   { src: "photos/frame-01.jpg" },
   { src: "photos/frame-02.jpg" },
+  { src: "photos/grad-01.jpg" },
   { src: "photos/frame-03.jpg" },
   { src: "photos/frame-04.jpg" },
+  { src: "photos/grad-02.jpg" },
   { src: "photos/frame-05.jpg" },
   { src: "photos/frame-06.jpg" },
+  { src: "photos/grad-03.jpg" },
   { src: "photos/frame-07.jpg" },
   { src: "photos/frame-08.jpg" },
+  { src: "photos/grad-04.jpg" },
   { src: "photos/frame-09.jpg" },
   { src: "photos/frame-10.jpg" },
+  { src: "photos/grad-05.jpg" },
   { src: "photos/frame-11.jpg" },
   { src: "photos/frame-12.jpg" },
+  { src: "photos/grad-06.jpg" },
   { src: "photos/frame-13.jpg" },
   { src: "photos/frame-14.jpg" },
+  { src: "photos/grad-07.jpg" },
   { src: "photos/frame-15.jpg" },
   { src: "photos/frame-16.jpg" },
+  { src: "photos/grad-08.jpg" },
   { src: "photos/frame-17.jpg" },
   { src: "photos/frame-18.jpg" },
+  { src: "photos/grad-09.jpg" },
   { src: "photos/frame-19.jpg" },
   { src: "photos/frame-20.jpg" },
+  { src: "photos/grad-10.jpg" },
   { src: "photos/frame-21.jpg" },
   { src: "photos/frame-22.jpg" },
+  { src: "photos/grad-11.jpg" },
   { src: "photos/frame-23.jpg" },
   { src: "photos/frame-24.jpg" },
+  { src: "photos/grad-12.jpg" },
 ];
