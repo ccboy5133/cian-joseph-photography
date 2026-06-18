@@ -2,38 +2,47 @@
    PHOTOS — this is the only file you edit to add your work.
    ============================================================
 
-   TOMORROW (when you have your photos):
-   1. Drop your image files into the  /photos  folder.
-   2. For each one, add an entry to the array below, e.g.:
+   The gallery, lightbox and ordering all read from this list.
+   To add a photo: drop the file in /photos and add an entry:
 
         {
-          src: "photos/sunrise-ridge.jpg",
-          title: "Sunrise Ridge",
-          category: "Landscape"
+          src: "photos/frame-25.jpg",
+          title: "An optional caption"
         },
 
-   3. Save. That's it — the gallery, filters and lightbox update
-      automatically. Delete the placeholder entries when ready.
-
    Notes:
-   - "category" drives the filter tabs. Reuse the same spelling
-     (e.g. "Portrait", "Landscape", "Street") to group photos.
-   - Leave "src" off (or set placeholder:true) to show a styled
-     placeholder tile — handy before the real files are in.
    - Order in this list = order on the page.
+   - "title" is optional — it shows on hover and in the lightbox.
+   - Leave "src" off (or set placeholder:true) to show a styled
+     placeholder tile.
+
+   Current set: 24 frames from "The Artisan Edit: 4th Batch
+   Reunion" (Lightroom album), exported at 2048px.
 ============================================================ */
 
 window.PHOTOS = [
-  { placeholder: true, title: "Golden Hour",      category: "Landscape", tone: "warm"  },
-  { placeholder: true, title: "Stillness",        category: "Portrait",  tone: "cool"  },
-  { placeholder: true, title: "City in Motion",   category: "Street",    tone: "noir"  },
-  { placeholder: true, title: "Coastline",        category: "Landscape", tone: "teal"  },
-  { placeholder: true, title: "The Look",         category: "Portrait",  tone: "rose"  },
-  { placeholder: true, title: "Crosswalk",        category: "Street",    tone: "noir"  },
-  { placeholder: true, title: "Low Fog",          category: "Landscape", tone: "cool"  },
-  { placeholder: true, title: "Window Light",     category: "Portrait",  tone: "warm"  },
-  { placeholder: true, title: "Neon Night",       category: "Street",    tone: "violet"},
-  { placeholder: true, title: "Ridgeline",        category: "Landscape", tone: "teal"  },
-  { placeholder: true, title: "Quiet Profile",    category: "Portrait",  tone: "rose"  },
-  { placeholder: true, title: "Rainy Avenue",     category: "Street",    tone: "violet"},
+  { src: "photos/frame-01.jpg" },
+  { src: "photos/frame-02.jpg" },
+  { src: "photos/frame-03.jpg" },
+  { src: "photos/frame-04.jpg" },
+  { src: "photos/frame-05.jpg" },
+  { src: "photos/frame-06.jpg" },
+  { src: "photos/frame-07.jpg" },
+  { src: "photos/frame-08.jpg" },
+  { src: "photos/frame-09.jpg" },
+  { src: "photos/frame-10.jpg" },
+  { src: "photos/frame-11.jpg" },
+  { src: "photos/frame-12.jpg" },
+  { src: "photos/frame-13.jpg" },
+  { src: "photos/frame-14.jpg" },
+  { src: "photos/frame-15.jpg" },
+  { src: "photos/frame-16.jpg" },
+  { src: "photos/frame-17.jpg" },
+  { src: "photos/frame-18.jpg" },
+  { src: "photos/frame-19.jpg" },
+  { src: "photos/frame-20.jpg" },
+  { src: "photos/frame-21.jpg" },
+  { src: "photos/frame-22.jpg" },
+  { src: "photos/frame-23.jpg" },
+  { src: "photos/frame-24.jpg" },
 ];

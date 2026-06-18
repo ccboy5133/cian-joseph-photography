@@ -15,19 +15,17 @@ Hosted on GitHub Pages. URL is shown in the repo's **Settings → Pages**.
 2. Open **`assets/js/photos.js`** and add one entry per photo:
 
    ```js
-   { src: "photos/sunrise-ridge.jpg", title: "Sunrise Ridge", category: "Landscape" },
+   { src: "photos/frame-25.jpg", title: "An optional caption" },
    ```
 
-3. Delete the `placeholder: true` example entries when you're ready.
-4. Save, commit, and push — the site updates automatically.
+3. Save, commit, and push — the site updates automatically.
 
-- `category` controls the filter tabs. Reuse spellings to group photos
-  (e.g. `"Portrait"`, `"Landscape"`, `"Street"`).
-- Order in the list = order on the page.
+- `title` is optional; it shows on hover and in the lightbox.
+- Order in the list = order on the page (one continuous gallery).
 
 ## Personalizing
 - **Email / socials:** edit the Contact section in `index.html`
-  (search for `hello@example.com` and the `data-social` links).
+  (search for `ellampally2@gmail.com` and the `data-social` links).
 - **Bio:** edit the About section text in `index.html`.
 - **Portrait photo:** replace the `.about__portrait` placeholder block in
   `index.html` with an `<img>`.
