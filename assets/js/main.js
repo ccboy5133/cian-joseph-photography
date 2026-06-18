@@ -24,17 +24,40 @@
     return `<img src="${p.src}" alt="${(p.title || "Photograph").replace(/"/g, "")}" loading="lazy" />`;
   }
 
-  function buildGallery() {
-    if (!gallery) return;
-    gallery.innerHTML = photos.map((p, i) => `
+  function cardHTML(p, i) {
+    return `
       <figure class="card" data-index="${i}" data-cat="${p.category || "All"}">
         <div class="card__media">${mediaHTML(p)}</div>
         <figcaption class="card__overlay">
           <span class="card__title">${p.title || ""}</span>
-          <span class="card__cat">${p.category || ""}</span>
         </figcaption>
-      </figure>`).join("");
+      </figure>`;
+  }
+
+  function buildGallery() {
+    if (!gallery) return;
+
+    // Group photos by category, preserving the order each category
+    // first appears in the list. Photos with no category fall into one
+    // untitled group rendered as a plain grid (no heading).
+    const groups = [];
+    const byCat = new Map();
+    photos.forEach((p, i) => {
+      const cat = p.category || "";
+      if (!byCat.has(cat)) { byCat.set(cat, []); groups.push(cat); }
+      byCat.get(cat).push({ p, i });
+    });
+
+    gallery.innerHTML = groups.map(cat => {
+      const cards = byCat.get(cat).map(({ p, i }) => cardHTML(p, i)).join("");
+      const heading = cat
+        ? `<h3 class="gallery-section__title reveal">${cat}</h3>`
+        : "";
+      return `<div class="gallery-section">${heading}<div class="gallery-grid">${cards}</div></div>`;
+    }).join("");
+
     observeCards();
+    $$(".gallery-section__title").forEach(el => io.observe(el));
   }
 
   /* ---------- Filters ---------- */
