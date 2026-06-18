@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cian E. Joseph — Photography</title>
+  <meta name="description" content="Cian E. Joseph — photographer. A portfolio of light, place, and people." />
+  <meta name="author" content="Cian E. Joseph" />
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="Cian E. Joseph — Photography" />
+  <meta property="og:description" content="A portfolio of light, place, and people." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>" />
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">
+      <span class="nav__brand-mark">CEJ</span>
+      <span class="nav__brand-full">Cian&nbsp;E.&nbsp;Joseph</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work" data-link>Work</a>
+      <a href="#about" data-link>About</a>
+      <a href="#contact" data-link>Contact</a>
+    </nav>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="hero__eyebrow reveal">Photographer · Visual Storyteller</p>
+      <h1 class="hero__title">
+        <span class="reveal-line"><span>Cian E.</span></span>
+        <span class="reveal-line"><span>Joseph</span></span>
+      </h1>
+      <p class="hero__lede reveal">
+        Chasing light, place, and the quiet moments in&nbsp;between.
+        A growing body of work — captured one frame at a&nbsp;time.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#work" class="btn btn--primary" data-link>View the work</a>
+        <a href="#contact" class="btn btn--ghost" data-link>Get in touch</a>
+      </div>
+    </div>
+    <a href="#work" class="hero__scroll" data-link aria-label="Scroll to work">
+      <span>Scroll</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- Work -->
+  <section class="work" id="work">
+    <div class="section-head reveal">
+      <h2 class="section-head__title">Selected Work</h2>
+      <p class="section-head__sub">A living gallery — new frames added often.</p>
+    </div>
+
+    <div class="filters reveal" role="tablist" aria-label="Filter photos by category">
+      <!-- Filter buttons are generated from photo categories -->
+    </div>
+
+    <div class="gallery" id="gallery" aria-live="polite">
+      <!-- Photo cards are injected by assets/js/photos.js + main.js -->
+    </div>
+
+    <p class="gallery__hint reveal">Tip: click any frame to view it large · use ← → keys to move through the set.</p>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div class="about__portrait reveal" aria-hidden="true">
+        <div class="about__portrait-inner" data-placeholder="Portrait">
+          <span>Portrait<br />coming soon</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="section-head__sub reveal">About</p>
+        <h2 class="about__title reveal">I make photographs that feel like the moment did.</h2>
+        <p class="reveal">
+          I'm Cian — a photographer drawn to natural light, honest texture, and
+          the spaces where people and place meet. Whether it's a portrait, a
+          landscape, or a fleeting street scene, my aim is the same: to hold on
+          to something true.
+        </p>
+        <p class="reveal">
+          This portfolio is just getting started. Check back as the collection
+          grows — and if you'd like to work together, the door's open.
+        </p>
+        <ul class="about__stats reveal">
+          <li><strong data-count="3">3</strong><span>Focus areas</span></li>
+          <li><strong data-count="100">100</strong><span>% natural light</span></li>
+          <li><strong>∞</strong><span>Frames to come</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact__inner reveal">
+      <p class="section-head__sub">Contact</p>
+      <h2 class="contact__title">Let's make something<br /> worth keeping.</h2>
+      <p class="contact__lede">
+        Available for portraits, events, and commissions.
+        Reach out and let's talk about your project.
+      </p>
+      <a href="mailto:hello@example.com" class="contact__email" id="contactEmail">hello@example.com</a>
+      <div class="contact__socials">
+        <a href="#" data-social>Instagram</a>
+        <a href="#" data-social>Behance</a>
+        <a href="#" data-social>500px</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Cian E. Joseph</span>
+    <span>Made with light.</span>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous">&#8249;</button>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next">&#8250;</button>
+    <figure class="lightbox__figure">
+      <div class="lightbox__stage"></div>
+      <figcaption class="lightbox__caption">
+        <span class="lightbox__title"></span>
+        <span class="lightbox__counter"></span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <script src="assets/js/photos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
